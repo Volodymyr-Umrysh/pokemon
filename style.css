@@ -7,7 +7,7 @@
 }
 .pokemon{
     border: 1px solid #000;
-    width: 30%;
+    width: 25%;
     margin: 10px;
     cursor: pointer;
     display: flex;
@@ -16,7 +16,7 @@
 }
 .photo-box{
     border: 1px solid #000;
-    width: 154px;
+    width: 90%;
     margin: 12px;
 }
 .photo-box>img{
@@ -33,6 +33,7 @@ h6.pokemon-name{
     text-align: center;
     height: 54px;
     width: 410px;
+    margin-top: 10px;
     margin-left: 50%;
 }
 .container-body{
@@ -43,8 +44,7 @@ h6.pokemon-name{
     margin-left: 136px;
     margin-top: 360px;
     border: 1px solid black;
-    height: 690px;
-    width: 284px;
+   
 }
 .photo-pokemon{
     border: 1px solid black;
@@ -58,6 +58,73 @@ h6.pokemon-name{
     margin: 26px;
 }
 .my-btn-more{
-    margin-left: 15%;
+    margin-left: 10%;
     width: 390px;
+}
+.types-box{
+   
+    display: flex;
+}
+.type{
+    
+    width: 62px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 7px;
+    border-radius: 4px;
+    margin: 4px;
+}
+#root{
+    display: flex;
+}
+.poison{
+    background-color: yellow;
+}
+.grass{
+    background-color: #32b332;
+}
+.fire{
+    background-color: red;
+}
+.bug{
+    background-color: rosybrown;
+}
+.flying{
+    background-color: skyblue;
+}
+.water{
+    background-color: #5757bd;
+}
+.normal{
+    background-color: burlywood;
+}
+.ground{
+    background-color: darkolivegreen;
+}
+.electric{
+    background-color: lawngreen;
+}
+.fairy{
+    background-color: magenta;
+}
+.psychic{
+    background-color: salmon;
+}
+.steel{
+    background-color: slategray;
+}
+.fighting{
+    background-color: tomato;
+}
+.rock{
+    background-color: silver;
+}
+.ghost{
+    background-color: tan;
+}
+.dragon{
+    background-color: yellowgreen;
+}
+.dark{
+    background-color: cadetblue;
 }

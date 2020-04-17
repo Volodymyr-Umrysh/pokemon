@@ -1,4 +1,4 @@
-import {getPokemonList, getSpecificPokemonById} from './network'
+import {getPokemonList, getSpecificPokemonById, getPokemonType} from './network'
 import {generatePokemonList, generateSpecificPokemon} from './generateHtml'
 
 const listContainer = document.querySelector('.pokemon-list-container')
@@ -29,7 +29,9 @@ getPokemonList()
                 
                 })
         }
- })   
+ })
+ 
+
 
  loadMoreButton.onclick = function(e){
     getPokemonList(nextUrl)

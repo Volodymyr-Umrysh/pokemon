@@ -1,5 +1,7 @@
 import {getSpecificPokemonById} from './network'
 import {getPokemonIdFromUrl} from './helpers'
+//import {getPokemonType} from './network'
+
 
 function createElement({tag, className}){
     const element = document.createElement(tag)
@@ -19,13 +21,16 @@ export function generateCardOfList({name, typeArray, id}){
     img.setAttribute('src', `https://pokeres.bastionbot.org/images/pokemon/${id}.png`);
     boxForPhoto.appendChild(img)
     // Name
-    const nameBox = createElement({tag: 'h6', className:'pokemon-name'})
+    const nameBox = createElement({tag: 'h4', className:'pokemon-name'})
     nameBox.textContent = name
     // Types
     const typesBox = createElement({tag:'div', className:'types-box'})
     typeArray.forEach(element => {
-        const type = createElement({tag:'div', className:'type'})
-        type.textContent = element.type.name
+        const typeName = element.type.name
+        const type = createElement({tag:'div', className:'type ' + typeName})
+        type.textContent = typeName
+        //console.log(typeName);
+        
         typesBox.appendChild(type)
     });
     
@@ -45,7 +50,7 @@ export function generateSpecificPokemon({id, name, statsArray}){
     photoPokemonBox.appendChild(img)
     pokemonBox.appendChild(photoPokemonBox)
     // Name
-    const pokemonName = createElement({tag:'h4', className:'name-pokemon'})
+    const pokemonName = createElement({tag:'h3', className:'name-pokemon'})
     pokemonName.textContent = name
     pokemonBox.appendChild(pokemonName)
     // Table
